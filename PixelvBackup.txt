@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {}
+
+@font-face {
+    font-family: "PixelFont";
+    src: url(./Pixellari.ttf) format(truetype);
+}
+
+body {
+    background-color: rgb(255, 242, 203);
+}
+
+.kemasan {
+    background-color: rgb(100, 42, 41);
+    height: 65px;
+}
+
+.induk-ayam {
+    padding: 13px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.induk-ayam ul {
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    gap: 13px;
+}
+
+.ayam {
+    background-color: rgb(107, 54, 52);
+    border: 1px solid;
+    border-color: rgb(66, 22, 22);
+    padding: 7px;
+}
+
+.kucing {
+    text-decoration: none;
+    color: rgb(226, 194, 145);
+    font-family: "PixelFont", monospace;
+}
+
+.ayam :hover {
+    background-color: rgb(128, 63, 61);
+    border: 1px solid;
+    border-color: rgb(66, 22, 22);
+    padding: 7px;
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    min-height: 80vh;
+    background: linear-gradient(to top, rgba(255, 242, 203, 0.5), rgba(0, 0, 0, 0)), url(https://i.pinimg.com/736x/37/92/c1/3792c10fc5742c0f79e479e4283535b1.jpg);
+
+}
+
+.hero .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(226, 177, 104, 0.4);
+}
+
+.hero .content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    color: aliceblue;
+    animation: fadeUp 2s ease forwards;
+}
+
+@keyframes fadeUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hero h1 {
+    font-weight: bolder;
+    font-family: "PixelFont", monospace;
+    font-size: 65px;
+}
+
+.hero p {
+    font-weight: bolder;
+    font-family: "PixelFont", monospace;
+}
+
+.white {
+    color: aliceblue;
+}
+
+.black {
+    color: rgb(53, 53, 53);
+}
+
+.ikan-mama p {
+    text-align: justify;
+    line-height: 1.6;
+    letter-spacing: 0.5;
+    max-width: 600px;
+    text-indent: 20px;
+    padding: 0 10px;
+    height: 23vh;
+}
+
+.ikan {
+    padding-left: 20px;
+    padding-top: 30px;
+    font-family: "PixelFont", monospace;
+    color: rgb(128, 63, 61);
+}
+
+.ikan-kecil {
+    padding-left: 20px;
+    padding-top: 4px;
+    color: rgb(128, 63, 61);
+    font-family: "PixelFont", monospace;
+}
+
+.footer-bungkus {
+    background-color: rgb(54, 54, 54);
+}
+
+.masako {
+    color: aliceblue;
+    height: 25vh;
+    padding: 30px;
+    /* padding-left: 40px;
+    padding-right: 40px; */
+    justify-content: space-between;
+    display: flex;
+    gap: 2px;
+}
+
+.masako ul {
+    text-decoration: none;
+    list-style: none;
+}
+
+.masako-kiri {
+    padding-left: 45px;
+    max-width: 190px;
+}
+
+.masako-kanan {
+    padding-right: 125px;
+    max-width: 190px;
+}
+
+.masako-tengah {
+    padding-right: 500px;
+}
+
+.masako-ayam {
+    font-family: "PixelFont", monospace;
+}
+
+.masako-sapi {
+    font-family: "PixelFont", monospace;
+}
+
+.masako-jamur {
+    color: white;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-bawah {
+    margin-bottom: 10px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    color: aliceblue;
+    font-family: "PixelFont", monospace;
+}
